@@ -79,3 +79,11 @@ li {
   font-size: 18px;
   margin: 5px 0;
 }
+.tab-button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.tab-button:hover {
+  background-color: #FF6347;
+  transform: scale(1.05);
+}

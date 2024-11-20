@@ -19,13 +19,21 @@ body {
 
 /* Sección de la imagen */
 .image-section {
-  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  transition: background-color 0.3s ease;
+  width: 100%;
+  height: 300px; /* Ajusta según tus necesidades */
+  background-color: #D2B48C; /* Color predeterminado */
+  overflow: hidden;
 }
+
+#profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
 
 #profile-image {
   width: 100%;

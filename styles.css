@@ -51,29 +51,30 @@ body {
 }
 
 .tab-button {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 18px;
-  background-color: #f0f0f0;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
+  padding: 15px 20px;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
 }
+
+.tab-content {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+h1, h2 {
+  margin-top: 20px;
+  text-align: left;
+}
+
 
 .tab-button:hover {
   background-color: #FF6347;
   transform: scale(1.05);
 }
 
-/* Contenido de las pestañas */
-.tab-content {
-  display: none;
-}
 
-h1, h2 {
-  color: #333;
-}
+
 
 ul {
   list-style-type: none;

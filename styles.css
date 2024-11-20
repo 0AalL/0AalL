@@ -23,10 +23,11 @@ body {
 }
 
 #profile-image {
-  width: 80%;  /* Hacer la imagen más grande */
-  height: auto;
+  width: 100%;  /* Ajusta la imagen a todo el ancho disponible */
+  height: 300px; /* Fija una altura para todas las imágenes */
+  object-fit: cover;  /* Mantiene la relación de aspecto y cubre el área */
   border-radius: 10px;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 /* Sección de la información */

@@ -1,78 +1,92 @@
 /* Estilos generales */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .image-section {
-    width: 35%;
-    background-color: #FFCC00; /* Amarillo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-section img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .info-section {
-    width: 65%;
-    background-color: #FF3300; /* Rojo */
-    color: white;
-    padding: 20px;
-  }
-  
-  .tabs {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-  }
-  
-  .tab-button {
-    background-color: #FFCC00; /* Amarillo */
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .tab-button:hover {
-    background-color: #FF9933; /* Amarillo oscuro */
-  }
-  
-  .tab-content {
-    display: none;
-  }
-  
-  h1, h2 {
-    color: #FFCC00; /* Amarillo */
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  ul li {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-  }
-  
-  strong {
-    color: #FFCC00; /* Amarillo */
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-section {
+  width: 35%;
+  background-color: #FFCC00; /* Amarillo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info-section {
+  width: 65%;
+  background-color: #FF3300; /* Rojo */
+  color: white;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #FFCC00; /* Amarillo */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; /* Espacio entre los botones */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tab-button:hover {
+  background-color: #FF9933; /* Amarillo oscuro */
+}
+
+.tab-content {
+  display: none;
+  text-align: center; /* Centra el texto dentro de la pestaña */
+}
+
+h1, h2 {
+  color: #FFCC00; /* Amarillo */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #FFCC00; /* Amarillo */
+}
+
+/* Asegura que el contenido dentro de las pestañas esté centrado */
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

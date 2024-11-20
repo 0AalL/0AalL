@@ -73,7 +73,10 @@ h1, h2 {
   transform: scale(1.05);
 }
 
-
+/* Contenido de las pestañas */
+.tab-content {
+  display: none;
+}
 
 h1, h2 {
   color: #333;

@@ -70,7 +70,6 @@ body {
 .hero_area {
   height: 136vh;
   position: relative;
-  background-image: url(../images/hero-bg.png);
   background-size: cover;
 }
 

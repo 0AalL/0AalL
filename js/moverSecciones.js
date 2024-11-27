@@ -1,28 +1,57 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const enlaces = document.querySelectorAll('nav a');
-
-    enlaces.forEach(enlace => {
-      enlace.addEventListener('click', function (event) {
-        event.preventDefault();
-        const seccionId = enlace.getAttribute('href').substring(1);
-        const seccion = document.getElementById(seccionId);
-        seccion.scrollIntoView({
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('inicio').addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetDiv = document.getElementById('inicioS');
+      if (targetDiv) {
+        targetDiv.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });
-      });
+      }
+    });
+
+    document.getElementById('obj').addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetDiv = document.getElementById('objS');
+      if (targetDiv) {
+        targetDiv.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+
+    document.getElementById('pasa').addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetDiv = document.getElementById('pasaS');
+      if (targetDiv) {
+        targetDiv.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+
+    document.getElementById('pro').addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetDiv = document.getElementById('proS');
+      if (targetDiv) {
+        targetDiv.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+
+    document.getElementById('con').addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetDiv = document.getElementById('conS');
+      if (targetDiv) {
+        targetDiv.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
     });
   });
-  /*
-  tive">
-                      <a class="nav-link" id="inicio">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="obj"> Objetivos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pasa"> Pasatiempos </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pro"> Proyectos </a>
-  */
+
